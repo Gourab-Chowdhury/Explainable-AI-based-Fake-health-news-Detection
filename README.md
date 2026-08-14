@@ -18,7 +18,7 @@ The preprocessing pipeline successfully aggregated the datasets into binary clas
 * **PubHealth:** 10,701 clean rows (53% REAL, 47% FAKE)
 * **FakeHealth:** 2,296 clean rows (67% REAL, 33% FAKE)
 * **CoAID:** 2,133 clean rows (73% REAL, 27% FAKE)
-
+(Dataset Details)[https://github.com/Gourab-Chowdhury/Explainable-AI-based-Fake-health-news-Detection/blob/main/Images/EDA/Dataset%20Size%20and%20Label%20Comparision.png]
 ### Dataset Model Performance
 ()[]
 
