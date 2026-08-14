@@ -1,1 +1,27 @@
 # Explainable-AI-based-Fake-health-news-Detection
+## 📌 Project Overview
+This project builds a robust, end-to-end Machine Learning pipeline to detect health-related misinformation. Because fake news strategies constantly evolve, a model trained on general health claims might fail when applied to niche outbreaks (like COVID-19). 
+
+To solve this, this project ingests and standardizes three distinct datasets—**PubHealth**, **CoAID**, and **FakeHealth**—into a unified binary classification format (REAL vs. FAKE). By doing so, it allows for the training of multiple machine learning model and rigorously tests their generalizability through **cross-dataset evaluation**.
+
+## 🎯 What We Wanted to Do (Project Goals)
+1. **Unified Data Pipeline:** Programmatically fetch, merge, and clean disparate health-news datasets with varying structures and label taxonomies into a standard `(combined_text, label_binary)` format.
+2. **Comprehensive ML Training:** Contrast the performance of lightweight traditional models (Multinomial Naive Bayes, Linear SVC) with high-performance ensemble trees (XGBoost, CatBoost).
+3. **Cross-Dataset Generalizability:** Prove that the models are learning semantic linguistic patterns of misinformation, rather than just memorizing vocabulary specific to a single dataset (e.g., training on PubHealth and testing on FakeHealth).
+4. **Explainable AI (XAI):** Utilize **LIME** to demystify the "black box" of the models, ensuring that predictions are based on logical indicators of deception rather than spurious dataset artifacts.
+
+## 📊 Result Analysis (Template)
+*(Note: As the project progresses through the ML scripts, populate this section with your empirical findings.)*
+()[]
+### Dataset Standardization Breakdown
+The preprocessing pipeline successfully aggregated the datasets into binary classifications:
+* **PubHealth:** 10,701 clean rows (53% REAL, 47% FAKE)
+* **FakeHealth:** 2,296 clean rows (67% REAL, 33% FAKE)
+* **CoAID:** 2,133 clean rows (73% REAL, 27% FAKE)
+
+### Dataset Model Performance
+()[]
+
+
+### 4. Explainability Insights (SHAP/LIME):
+LIME text explainers consistently highlighted phrases related to verifiable sources (e.g., "according to the CDC", "published in the journal of...").
